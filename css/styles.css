@@ -20,11 +20,10 @@ body {
 /* Header section */
 .header {
   border: 1px solid rgba(236, 236, 236, 1);
-}
-.header .container {
   padding-top: 25px;
   padding-bottom: 25px;
-  margin: 0 auto;
+}
+.header .container {
   display: flex;
 }
 .navigation {
@@ -102,12 +101,10 @@ body {
 .hero {
   background-color: rgba(47, 48, 58, 1);
   text-align: center;
-}
-.hero .container {
   padding-top: 200px;
   padding-bottom: 200px;
-  margin: 0 auto;
 }
+
 .hero-title {
   color: var(--white-color);
   margin: 0 0 30px;
@@ -136,10 +133,13 @@ body {
 .button:hover {
   background-color: rgb(23, 138, 232);
 }
-/* Specifics sectio */
+/* Specifics section */
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
+}
+.our-work {
+  padding-top: 0;
 }
 .visually-hidden {
   position: absolute;
@@ -164,6 +164,9 @@ body {
   padding: 0;
 
   justify-content: space-between;
+}
+.content-list .item {
+  flex-basis: calc((100%-90px) / 4);
 }
 .content-list .item:not(:last-child) {
   margin: 0 30px 0 0;
@@ -190,9 +193,8 @@ body {
 .s-background {
   background: #f5f4fa;
 }
-
 .team-title {
-  margin: 30px 58px 10px 60px;
+  margin: 0 0 10px 0;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.188;
@@ -215,19 +217,19 @@ body {
 .team-list .item:not(:last-child) {
   margin-right: 30px;
 }
-
 .team-text {
-  margin: 0 auto 30px;
+  margin: 0;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.188;
   text-align: center;
 }
+.team-description {
+  padding: 30px 0;
+}
 /* Footer */
 .footer {
   background: rgba(47, 48, 58, 1);
-}
-.footer .container {
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -322,6 +324,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   padding: 0;
+  margin: 0;
 }
 .project-list .item {
   width: calc((100% - 60px) / 3);
@@ -333,8 +336,11 @@ body {
 .project-list .item:not(:nth-last-child(-n + 3)) {
   margin-bottom: 30px;
 }
+.cards-descriptionn {
+  padding: 20px 24px;
+}
 .project-title {
-  margin: 20px 24px 4px;
+  margin: 0 0 4px 0;
 
   font-weight: 700;
   font-size: 18px;
@@ -342,7 +348,7 @@ body {
   color: var(--primary-title-color);
 }
 .project-text {
-  margin: 0 24px 20px;
+  margin: 0;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.875;
